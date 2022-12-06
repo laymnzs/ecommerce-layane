@@ -1,1 +1,5 @@
 # ecommerce-layane
+
+# Deploy
+
+# Referência
