@@ -1,6 +1,6 @@
 # ecommerce-layane
 
-E-commerce de Camisetas com Estampas Criativas
+E-commerce de Camisetas com Estampas Criativas.
 
 Tecnologias utilizadas: CSS HTML Javascript React;
 
