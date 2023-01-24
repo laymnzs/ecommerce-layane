@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import ProdutosTela from "./telas/Produtos/ProdutosTela";
 import CarrinhoTela from "./telas/Carrinho/CarrinhoTela";
 import Header from "./componentes/Header/Header";
-import ContatoTela from "./telas/Contato/ContatoTela";
+import ContatoTela from "./telas/Contato/ContatoTela"
+
+
 
 function App() {
   //começa na página principal (PRODUTOS)
