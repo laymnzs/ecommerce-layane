@@ -14,8 +14,10 @@ function Header(props) {
     itensNoCarrinho,
     filtraTexto,
     onChangeFiltraTexto,
+    ordena,
+    onChangeOrdena
   } = props
-  console.log(props)
+  //console.log(props)
 
     return (
       <HeaderContainer>
@@ -26,17 +28,33 @@ function Header(props) {
    </div>
 
    
-   <div>
+  <div>
     <input className="pesquisar" 
     placeholder="Pesquisar"
     value={filtraTexto}  
     onChange={onChangeFiltraTexto} />
 
-    {/*  input está sendo controlado e tudo que for digitado estará sendo guardado no estado do App (filtraTexto)*/}
+
+<div className="filtrar">
+<p>Filtrar por</p>
+<p>Menor Preço:</p>
+<input type="number" class="filtro" placeholder="R$ 20.00" value=""/>
+<p>Maior Preço:</p>
+<input type="number" class="input" placeholder="R$ 50.90" value=""/>
+</div>
+
+<div>
+<select class="ordena">
+<option value="" className="ordena">Ordenar por</option>
+<option value="Maior" className="ordena">Preço: do maior para o menor</option>
+<option value="Menor" className="ordena">Preço: do menor para o maior</option>
+</select>
+</div>
+
 
     
     <div className="button-lupa">
-    <button>
+    <button button-lupa>
         <img src={lupaIcone} width="30px" alt="Lupa Icone"/>
     </button>
     </div>
@@ -61,6 +79,7 @@ function Header(props) {
     </div>
 
       </HeaderContainer>
+      
     );
   }
   

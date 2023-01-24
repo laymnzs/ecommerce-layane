@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProdutosTela from "./telas/Produtos/ProdutosTela";
 import CarrinhoTela from "./telas/Carrinho/CarrinhoTela";
 import Header from "./componentes/Header/Header";
@@ -15,6 +15,8 @@ function App() {
 
   //filtrará o texto no input
   const [filtraTexto, setFiltraTexto] = useState("");
+
+  const [ordena, setOrdena] = useState("");
 
 
   //função responsável pela troca de telas:
@@ -57,6 +59,9 @@ function App() {
       produtoEncontrado.quantidade++;
     }
 
+    console.log(produtoEncontrado)
+    console.log(produtoAdicionado)
+
     setCarrinho(novoCarrinho);
   };
 
@@ -80,6 +85,27 @@ function App() {
   const onChangeFiltraTexto = (e) => {//enviar função para Tela de Produtos
   setFiltraTexto(e.target.value) //enviando como props
  }
+
+
+ const onChangeOrdena = (e) => {
+  setOrdena(e.target.value)
+ }
+
+
+ useEffect(() => {
+  if (carrinho.length > 0) {
+    const listaStringCarrinho = JSON.stringify(carrinho);
+    localStorage.setItem("carrinho", listaStringCarrinho);
+  }
+}, [carrinho]);
+
+useEffect(() => {
+  const novoCarrinho = JSON.parse(localStorage.getItem("carrinho"));
+  if (novoCarrinho !== null) {
+    setCarrinho(novoCarrinho);
+  }
+}, []);
+
 
 
   //LINHA 61 à 88 - SÃO FUNÇÕES QUE DIMINUEM OU AUMENTAM A QUANTIDADE
@@ -154,6 +180,8 @@ function App() {
         itensNoCarrinho={carrinho.length} //o HEADER irá falar quantos itens tem no carrinho
         filtraTexto={filtraTexto} //valor do input (barra de pesquisa)
         onChangeFiltraTexto={onChangeFiltraTexto}
+        ordena={ordena}
+        onChangeOrdena={onChangeOrdena}
        
       />
       {renderTela()}

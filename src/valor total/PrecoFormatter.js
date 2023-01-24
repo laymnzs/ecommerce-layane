@@ -1,4 +1,4 @@
-
+import produto from "../produtos/Produtos.json"
 
 //convertendo valor (R$)
 export const precoFormatter = new Intl.NumberFormat('pt-BR',{
@@ -7,4 +7,6 @@ export const precoFormatter = new Intl.NumberFormat('pt-BR',{
     currency: 'BRL',
   });
   
-  
+  <div className="media">
+  <h1>{produto.preco * precoFormatter / 10}</h1>
+  </div>

@@ -9,7 +9,7 @@ section {
 
     h1 {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 70px;
         margin-left: 50px;
 }
 

@@ -21,10 +21,7 @@ export const ProdutoCardContainer = styled.article`
   overflow: hidden;
   }
 
-  h1 {
-    font-size: 20px;
-    color: #43434;
-  }
+  
 
   > div {
     margin-right: 50px;    

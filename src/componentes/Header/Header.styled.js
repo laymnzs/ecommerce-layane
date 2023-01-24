@@ -5,16 +5,43 @@ border: 2px solid black;
 display: flex;
 justify-content: space-between;
 background-color: black;
-margin:-8px -8px;
+margin:-10px -10px;
 
 .logo {
 margin: 0px 50px;
 }
 
+.filtrar {
+   color: black;
+   display: grid;
+   justify-content: flex-start;
+   margin-top: 100px;
+   margin-left: -520px;
+
+    }
+    .ordena{
+        display: grid;
+   justify-content: flex-start;
+   margin-top: -100px;
+        margin-top:70px;
+        margin-left: -520px;
+    }
+
+.filtros{
+    margin-top:-20px;
+        margin-left: -520px;
+}
+
+input.filtro{
+    
+}
+
+   
 .button-lupa {
     display: flex;
+    position: relative;
     align-items: center;
-    margin-top: -35px;
+    margin-top: -337px;
     margin-left: 245px;
     height: 35px;
     justify-content: space-between;
@@ -65,7 +92,7 @@ button {
     .itens-carrinho{
         border-radius: 30%;
     }
-        
     
+ 
 }
 `

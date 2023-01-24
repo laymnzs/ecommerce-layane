@@ -22,21 +22,31 @@ function ProdutoCard(props) {
 
   return (
     <ProdutoCardContainer>
+      
 
        <div className="url">
       <img src={produto.url} width="150px" alt="Camisetas" />
       </div> 
 
+      <div className="booelano">
+      <h1>{produto.estoque}</h1>
+      </div> 
+
+      {/* <div className="media">
+      <h1>{produto.preco * precoFormatter / 10}</h1>
+      </div> */}
+
 
       <div>
         <div className="card-header">
-          <h1>{produto.nome}</h1>
+          <h1>{produto.nome.toUpperCase()}</h1>
           </div>
 
           <div className="card-preco">
           <span>{precoFormatter.format(produto.preco)}</span>
         </div>
 
+    
       
     {/* se produto for maior que 1, ex: 2 (produtos), então poderá "remover/diminuir"  1 quantidade*/}
 
@@ -48,6 +58,7 @@ function ProdutoCard(props) {
       -
       </button>
       }
+
 
 
        {/* se produto for maior que 1, então poderá adicionar +1 quantidade*/}

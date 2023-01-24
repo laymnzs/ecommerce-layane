@@ -22,7 +22,9 @@ function CarrinhoTela (props) {
     return (
       <Main>
       <section>
-      <h1>Meu Carrinho 🛒</h1>
+
+        
+      <h1 className="meu-carrinho">Meu Carrinho</h1>
 
       <div className="oferta">
       <p> Você encontra variedade, qualidade e preço baixo aqui na <span>ASTRODEV</span>.</p>

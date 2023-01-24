@@ -8,10 +8,10 @@ export const Main = styled.main`
     flex-direction: column;
     align-items: center;
 
-    h1 {
+    .meu-carrinho {
       width: 100%;
-      margin-top: 10px;
-      margin-left: 50px;
+      margin-top: -10px;
+      margin-left: 1200px;
     }
 
     .valor-total {

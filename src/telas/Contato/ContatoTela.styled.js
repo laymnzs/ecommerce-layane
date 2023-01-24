@@ -8,10 +8,9 @@ section {
   flex-direction: column;
   align-items: center;
 
-  .contato h1 {
-    width: 100%;
+  .contato {
     margin-top: 10px;
-    margin-right: 1240px;
+    margin-right: 2022;
     }
     
     .compra p{

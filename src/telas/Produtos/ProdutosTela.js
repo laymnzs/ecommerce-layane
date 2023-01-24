@@ -36,7 +36,7 @@ function ProdutosTela(props) {
             <p>Aqui temos Camisetas com as estampas mais divertidas relacionadas ao espaço.</p>
             </div>
     
-      <h1>Camisetas</h1>
+      <h1 className="camisetas">Camisetas</h1>
 
       {
         //retorno do map, está passando por props o PRODUTO. LINHA 42

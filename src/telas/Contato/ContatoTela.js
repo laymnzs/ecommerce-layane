@@ -12,7 +12,7 @@ function ContatoTela (props) {
             <Main>
             <section>
             <div className="contato">
-            <h1>Contato </h1>
+            <h1  className="contato">Contato </h1>
             </div>
            
             <div className="compra">
