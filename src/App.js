@@ -4,8 +4,6 @@ import CarrinhoTela from "./telas/Carrinho/CarrinhoTela";
 import Header from "./componentes/Header/Header";
 import ContatoTela from "./telas/Contato/ContatoTela"
 
-
-
 function App() {
   //começa na página principal (PRODUTOS)
   const [ativaTela, setAtivaTela] = useState("ProdutosTela");

@@ -2,7 +2,7 @@
 
 E-commerce de Camisetas com Estampas Criativas.
 
-Tecnologias utilizadas: CSS HTML Javascript React;
+Tecnologias utilizadas: CSS HTML Javascript React
 
 # Deploy
 https://e-commerce-layane-mnzs.surge.sh
